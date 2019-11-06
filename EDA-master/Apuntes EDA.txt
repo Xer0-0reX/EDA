@@ -1,0 +1,8 @@
+Algoritmoas de ordenamiento
+selection Sort
+
+quick Sort
+1 Elijo un elemento con pivote
+2Paso los elementos mas chicos que el pivote a la izquierda del mismo
+3. Mando a llamar el quicksort a la parte izquierda
+4 Mando a llamar el quicksort con la parte derecha

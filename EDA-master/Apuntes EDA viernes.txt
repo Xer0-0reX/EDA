@@ -1,0 +1,35 @@
+Analisis de algoritmos
+	-En donde vemos como medir la eficacia de un programa
+		(y de paso en algunos casos lo complejo de un problema)
+	P=polinomial contenido en NP=Non-deterministic Polynomial
+	La mas grande pregunta de la programacion es ¿P=NP? P/=NP
+	-¿Que mido?
+		+Numero de pasos
+		+espacio
+		+Comunicaciones
+	Lo que nos interesa es como cambia el numero de pasos, memoria, etc.conformw crece el tamaño de la entrada
+Tipos de Analisis
+	+En el mejor de los casos
+	+en el peor de los casos
+	+El caso promedio(para esto se necesita saber la distribucion de las entradas)
+	+El caso amortizad;Esto es para estructuras de datos y se fija en el peor de los casos de una combinacion de operaciones
+Notacion Asintotica
+	O(g(n))={f(n):existen constantes positivasc y no tal que O<=f(n)<=Cg(n) para toda n>=n0}
+	15n^2+45n=O(n^2)
+	15n^2+45n<=Cn^2
+	15+45/n<=c
+	45/n<=C-15
+	n>=45/(c-15)
+	C=16	n0=45
+
+	O(g(n))={f(n):existen constantes positivas c y no tal que O<=cg(n)<=f(n) para toda n>=n0}
+	15n^2+45n=O(n^2)
+	15n^2+45n>=Cn^2
+	15+45/n>=c
+	45/n>=C-15
+	n<=45/(c-15)
+	C=14	n=-45
+
+	?(g(n))={f(n):existen constantes positivas c1,c2 y no tal que O<=cg(n)<=f(n)<=C2g(n) para toda n>=n0}
+	15n^2+45n=?(n^2)
+	sea c1=16	c2=14	n=45
